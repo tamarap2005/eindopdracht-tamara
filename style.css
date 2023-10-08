@@ -48,7 +48,7 @@ header li,a {
     transition: background 250ms ease-in;
 }
 
-a:hover {
+li a:hover {
     background-color: rgb(66, 66, 93);
     padding: 8px;
     border-radius: 5px;
