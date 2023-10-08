@@ -126,11 +126,13 @@ section img {
     width: 23vw;
     border-radius: 5px;
     margin-bottom: 30px;
+    object-fit: scale-down;
 }
 
 img.loena {
     background-color: rgba(255, 255, 255, 0.627);
     padding: 30px;
+    object-fit: scale-down;
 }
 
 video {
