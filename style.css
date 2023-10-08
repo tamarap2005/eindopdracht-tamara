@@ -7,19 +7,22 @@
     color: white;
 }
 
-/* achtergronden begin */
-#achtergrond {
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* achtergronden */
+body {
     background-image: url(images/achtergond.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-body {
-    background-color: rgb(100, 102, 106);
-}
-/*achtergronden einde */
-
-/* navbalk begin */
+/* navbalk */
 header nav {
     margin: 0;
     padding: 0;
@@ -27,23 +30,19 @@ header nav {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header span a {
+div a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
 
-ul {
+nav ul {
     display: flex;
     font-size: 18px;
     color: white;
@@ -52,13 +51,13 @@ ul {
     align-items: center;
 }
 
-header nav ul li {
+header li {
     display: inline-block;
     padding-left: 15px;
     margin: 0;
 }
 
-header nav ul li a {
+header a {
     text-decoration: none;
     justify-content: space-between;
     align-items: center;
@@ -67,67 +66,84 @@ header nav ul li a {
     transition: background 250ms ease-in;
 }
 
-a:hover {
+li a:hover {
     background-color: rgba(58, 58, 59, 0.689);
     padding: 8px;
     border-radius: 5px;
 }
 
-
-/* navbalk einde */
-
-
-section {
-    padding-top: 200px;
-    padding-left: 130px;
+/* footer */
+footer {
+    background-color: rgb(23, 23, 33);
+    
 }
 
-section h1 {
-    color: white;
-    font-size: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-section p {
-    padding: 0%;
-    padding-right: 50%;
-}
-
-section a {
-    text-decoration: none;
-    border: 3px solid rgb(138, 138, 173);
-    background-color: rgb(38, 38, 57);
-    color: white;
-}
-
-main a:hover,
-main a:focus-visible {
-    background-color: rgb(138, 138, 173);
-}
-/* index einde */
-
-/* algemene dingen begin */
-h2 {
-    padding-top: 5em;
-    padding-bottom: 14px;
-    text-align: center;
-}
-
-article {
+footer ul {
     display: flex;
-    flex-wrap: wrap;
-
+    justify-content: center;
+    list-style: none;
 }
 
-/*main p, h3 {
-    display: block;
-    padding-top: 14px;
+footer li {
+    margin: 2em;
+    padding: 8px;
+    border-radius: 3px;
+    transition: 250ms ease-in;
+}
+
+footer li:hover {
+    color: rgb(164, 164, 196);
+    margin: 2em;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+
+/* index */
+article {
+    padding-top: 200px;
+    padding-left: 80px;
+}
+
+article h1 {
+    font-size: 60px;
+}
+
+article p {
+    padding-right: 60%;
+}
+
+article a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(138, 138, 173);
+    margin-top: 8px;
+}
+
+article a:hover {
+    padding: 8px;
+    border-radius: 3px;
+    background-color: rgb(66, 66, 93);
+}
+
+
+/* andere pagina's */
+h2 {
+    padding-top: 2em;
     padding-bottom: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
     text-align: center;
-} */
+}
+
+
+main>p, h3 {
+    display: flex;
+    margin-left: 32em;
+    margin-right: 32em;
+    justify-content: center;
+    text-align: center;
+} 
 
 .afbeelding {
     display: block;
@@ -152,13 +168,27 @@ article {
     text-align: left;
 }
 
-.video {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+video {
+    display: flex;
+    margin-left: 32em;
+    margin-right: 32em;
+    justify-content: center;
+    text-align: center;
     margin-top: 14px;
+    margin-bottom: 14px;
     width: 30%;
 }
 /*random eind*/
 
-/*header van 3 paginas */
+section {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section p {
+    padding-right: 30%;
+}
