@@ -8,117 +8,100 @@
 }
 
 /* achtergronden begin */
-#voorkant {
-    background-image: url(images/maan.jpg);
-    background-attachment:fixed;
+#achtergrond {
+    background-image: url(images/achtergond.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.achtergrond {
-    background-color: rgb(213, 220, 233);
+body {
+    background-color: rgb(100, 102, 106);
 }
 /*achtergronden einde */
 
 /* navbalk begin */
+header nav {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 5px 100px;
-    background-color: rgb(133, 149, 170);
-    display: inline;
-    justify-content: flex-start;
-    align-items: baseline;
-
-}
-
-.navigatie {
-    list-style-type: none;
-    color: white;
-    justify-content: flex-start;
-}
-
-.logo {
-    align-items: start;
-}
-
-
-.navigatie a {
-    text-decoration: none; 
-    color: white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navigatie a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0; 
-    width: 100%;
-    height: 2px;
-    background: white;
-
+header span a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.navigatie li {
-    justify-content: flex-start;
-    flex-basis: auto;
+ul {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
     display: inline-block;
-    text-align: left;
+    padding-left: 15px;
+    margin: 0;
 }
 
-.navigatie a:hover {
-    color: rgb(54, 61, 70);
+header nav ul li a {
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 250ms ease-in;
 }
+
+a:hover {
+    background-color: rgba(58, 58, 59, 0.689);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
 /* navbalk einde */
 
-/* index begin */
-main h1{
-    text-align: center;
-    margin-top: 100px;
-    padding-top: 110px;
-    color: black;
+
+section {
+    padding-top: 200px;
+    padding-left: 130px;
 }
 
-main h1 {
+section h1 {
     color: white;
-    text-shadow: 4px 2px rgb(72, 72, 72);
-    font-size: 70px;
-    display: block;
-    text-align: center;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    font-size: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-p.voorpagina{
-    display: block;
-    text-align: left;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: 52%;
+section p {
+    padding: 0%;
+    padding-right: 50%;
 }
 
 section a {
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
     text-decoration: none;
-    padding: 15px 25px;
-    margin: auto;
     border: 3px solid rgb(138, 138, 173);
     background-color: rgb(38, 38, 57);
-    cursor: pointer;
     color: white;
 }
 
-section a:hover,
-section a:focus-visible {
+main a:hover,
+main a:focus-visible {
     background-color: rgb(138, 138, 173);
 }
 /* index einde */
@@ -130,7 +113,13 @@ h2 {
     text-align: center;
 }
 
-main p, h3 {
+article {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*main p, h3 {
     display: block;
     padding-top: 14px;
     padding-bottom: 14px;
@@ -138,7 +127,7 @@ main p, h3 {
     margin-right: auto;
     width: 30%;
     text-align: center;
-}
+} */
 
 .afbeelding {
     display: block;
@@ -170,3 +159,6 @@ main p, h3 {
     margin-top: 14px;
     width: 30%;
 }
+/*random eind*/
+
+/*header van 3 paginas */
